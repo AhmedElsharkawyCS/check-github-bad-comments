@@ -1,0 +1,26 @@
+{
+  "name": "checks-bad-cooments",
+  "version": "1.0.0",
+  "description": "Github action to check PR bad comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedElsharkawyCS/checks-bad-cooments.git"
+  },
+  "author": "Ahmed Elsharkawy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedElsharkawyCS/checks-bad-cooments/issues"
+  },
+  "homepage": "https://github.com/AhmedElsharkawyCS/checks-bad-cooments#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.3",
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^2.3.0"
+  }
+}

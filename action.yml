@@ -1,0 +1,12 @@
+name: "Check toxicity"
+description: "Detect bad comment"
+inputs:
+  GITHUB_TOKEN:
+    required: true
+  message:
+    required: false
+  toxicity_threshold:
+    required: false
+runs:
+  using: "node12"
+  main: "index.js"

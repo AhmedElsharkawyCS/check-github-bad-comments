@@ -1,0 +1,12 @@
+on: [issue_comment, pull_request_review]
+
+jobs:
+  toxic_check:
+    runs-on: ubuntu-latest
+    name: Checks Comments
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checks Comments - action step
+        uses: AhmedElsharkawyCS/checks-bad-cooments@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
